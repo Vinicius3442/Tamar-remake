@@ -1,0 +1,157 @@
+.species-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-text-light);
+  overflow: hidden;
+}
+
+.species-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.species-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.species-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 43, 61, 0.9) 0%, transparent 60%);
+  z-index: -1;
+}
+
+.species-hero-title {
+  padding-bottom: 3rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.species-hero-title h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #fff;
+}
+
+.species-hero-title h2 {
+  font-family: var(--font-family-body);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--color-text-light);
+  opacity: 0.9;
+}
+
+.species-content {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.quick-facts {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 63, 92, 0.1);
+  border-top: 5px solid var(--color-sand);
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+.quick-facts h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eef7f7;
+}
+
+.quick-facts ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.quick-facts i {
+  font-size: 1.8rem;
+  color: var(--color-teal-wave);
+  margin-top: 2px;
+}
+
+.quick-facts strong {
+  display: block;
+  color: var(--color-deep-teal);
+  font-weight: 700;
+}
+
+.status {
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.status-en { background: #d9534f; }
+.status-vu { background: #f0ad4e; }
+.status-lc { background: #5cb85c; }
+
+.main-description {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.main-description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-description h3 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.main-description p {
+  margin-bottom: 1.5rem;
+}
+
+.in-text-image {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 63, 92, 0.1);
+}
+
+.in-text-image figcaption {
+  padding: 1rem;
+  background: #fff;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+
+
+@media (min-width: 992px) {
+  .species-content {
+    grid-template-columns: 320px 1fr;
+    gap: 4rem;
+  }
+}

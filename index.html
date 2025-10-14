@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Tamar | Protegendo o Futuro dos Oceanos</title>
+
+    <link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/home.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header ">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="assets/imagens/logo_tamar.png" alt="Logo Projeto Tamar" />
+        </a>
+
+        <nav class="nav-desktop">
+            <ul class="nav-links">
+                <li><a href="./tartarugas/tartarugas-marinhas.html">Tartarugas Marinhas</a></li>
+        
+                <li><a href="./onde-estamos.html">Onde Estamos</a></li>
+        
+                <li><a href="#">O Que Fazemos</a></li>
+                <li><a href="#">Mais Informações</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#" class="action-button-secondary">Nossa Loja</a>
+        </div>
+
+        <button class="menu-hamburger" aria-label="Abrir Menu">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </header>
+
+    <aside class="nav-mobile">
+      <div class="nav-mobile-header">
+        <a href="index.html" class="logo-mobile">
+          <img src="assets/imagens/logo_tamar.png" alt="Logo Projeto Tamar" />
+        </a>
+        <button class="close-menu" aria-label="Fechar Menu">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+      <nav>
+        <ul class="nav-links-mobile">
+          <li><a href="#">Tartarugas Marinhas</a></li>
+          <li><a href="#">Visite o Tamar</a></li>
+          <li><a href="#">O Que Fazemos</a></li>
+          <li><a href="#">Onde Estamos</a></li>
+          <li><a href="#">Mais Informações</a></li>
+          <hr />
+          <li><a href="#">Nossa Loja</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-video-background">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/imagens/poster-video.jpg"
+          >
+            <source src="assets/videos/banner.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <h1 class="hero-title">
+            Protegendo o futuro dos oceanos.
+          </h1>
+          <p class="hero-subtitle">
+            Há mais de 40 anos, o Projeto Tamar luta pela conservação das
+            tartarugas marinhas no Brasil.
+          </p>
+          <a href="#" class="hero-button">Conheça Nosso Trabalho</a>
+        </div>
+      </section>
+      <!-- <section class="impact-section">
+         Por enquanto vazio 
+      </section> !-->
+
+      <section class="news-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Fique por Dentro</h2>
+            <a href="#" class="see-all-link">Ver Todas as Notícias &rarr;</a>
+          </div>
+          <div class="news-highlight">
+            <div class="news-image-container">
+              <img
+                src="imagens/noticia-semana-criancas.jpg"
+                alt="Crianças interagindo em uma das bases do Projeto Tamar"
+              />
+            </div>
+            <div class="news-content">
+              <span class="news-category">Eventos</span>
+              <h3 class="news-title">
+                Semana das Crianças é no Projeto Tamar!
+              </h3>
+              <p class="news-summary">
+                Aproveite as atividades desenvolvidas pelos Museus da Fundação
+                Projeto Tamar durante a semana das Crianças e conecte os
+                pequenos com a importância da conservação marinha.
+              </p>
+              <a href="#" class="news-read-more">Leia Mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Faça Parte da Nossa Missão</h2>
+          </div>
+          <div class="cta-grid">
+    <a href="#" class="cta-card slideshow-card">
+        <div class="cta-card-images">
+            <img src="assets/images/cta/cta-visite-1.jpg" alt="Turistas observando tartarugas em um tanque" class="cta-card-image visible">
+            <img src="assets/images/cta/cta-visite-2.jpg" alt="Criança maravilhada olhando para uma tartaruga" class="cta-card-image">
+            <img src="assets/images/cta/cta-visite-3.jpg" alt="Vista aérea de uma das bases do Tamar" class="cta-card-image">
+        </div>
+        <div class="cta-card-content">
+            <h3>Visite Nossas Bases</h3>
+            <p>Conheça de perto nosso trabalho e encante-se com as tartarugas marinhas.</p>
+        </div>
+    </a>
+
+    <a href="#" class="cta-card slideshow-card">
+        <div class="cta-card-images">
+            <img src="assets/images/cta/cta-loja-1.jpg" alt="Camiseta e produtos da loja do Tamar" class="cta-card-image visible">
+            <img src="assets/images/cta/cta-loja-2.jpg" alt="Pessoa vestindo uma camisa do Tamar na praia" class="cta-card-image">
+            <img src="assets/images/cta/cta-loja-3.jpg" alt="Detalhe de um chaveiro de tartaruga da loja" class="cta-card-image">
+        </div>
+        <div class="cta-card-content">
+            <h3>Nossa Loja Online</h3>
+            <p>Sua compra se transforma em conservação. Leve o Tamar com você.</p>
+        </div>
+    </a>
+
+    <a href="#" class="cta-card slideshow-card">
+        <div class="cta-card-images">
+            <img src="assets/images/cta/cta-biologo-1.jpg" alt="Bióloga cuidando de uma tartaruga" class="cta-card-image visible">
+            <img src="assets/images/cta/cta-biologo-2.jpg" alt="Alimentação de tartarugas em um tanque de reabilitação" class="cta-card-image">
+            <img src="assets/images/cta/cta-biologo-3.jpg" alt="Participante do programa ajudando a medir uma tartaruga" class="cta-card-image">
+        </div>
+        <div class="cta-card-content">
+            <h3>Seja Biólogo por um Dia</h3>
+            <p>Viva uma experiência inesquecível e participe da nossa rotina de cuidados.</p>
+        </div>
+    </a>
+</div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-about">
+          <img
+            src="imagens/logo_tamar.png"
+            alt="Logo Projeto Tamar"
+            class="footer-logo"
+          />
+          <p>
+            O Projeto Tamar é uma soma de esforços entre a Fundação Pró-TAMAR e
+            o Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio).
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegue</h4>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li><a href="#">Transparência</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="ph ph-instagram-logo"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="ph ph-facebook-logo"></i
+            ></a>
+            <a href="#" aria-label="Youtube"
+              ><i class="ph ph-youtube-logo"></i
+            ></a>
+          </div>
+        </div>
+
+        <section class="footer-partners">
+          <h4>Nossos Parceiros</h4>
+          <div class="partners-grid">
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="imagens/parceiros/petrobras.svg" alt="Logo Petrobras" />
+            </a>
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="imagens/parceiros/ucf.svg" alt="Logo UCF" />
+            </a>
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/imagens/parceiros/jeep_logo.svg" alt="Logo Jeep" />
+            </a>
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="imagens/parceiros/marinha.svg"
+                alt="Logo Marinha do Brasil"
+              />
+            </a>
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="imagens/parceiros/totvs.svg" alt="Logo TOTVS" />
+            </a>
+            <a
+              href="#"
+              class="partner-logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/imagens/parceiros/visa_logo.svg" alt="Logo Visa" />
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fundação Pró-Tamar. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

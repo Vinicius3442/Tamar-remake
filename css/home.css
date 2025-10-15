@@ -169,7 +169,7 @@
   border-radius: 15px;
   overflow: hidden;
   display: block;
-  color: var(--text-light);
+  color: #fff;
   box-shadow: 0 15px 40px rgba(0, 63, 92, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -199,23 +199,44 @@
   transform: scale(1.05);
 }
 .cta-card-content {
-  position: absolute;
+    position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 2rem 1.5rem;
   background: linear-gradient(0deg, rgba(0, 43, 61, 0.95) 0%, transparent 100%);
   transition: background 0.3s;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 .cta-card:hover .cta-card-content {
   background: linear-gradient(0deg, rgba(0, 43, 61, 1) 0%, transparent 100%);
 }
 .cta-card-content h3 {
-  color: var(--text-light);
+  color: #fff;
   font-size: 1.5rem;
 }
+.promo-banner-section {
+    padding: 4rem 0 2rem 0;
+}
 
-/* Ajustes para telas maiores */
+.promo-banner {
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 63, 92, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-banner img {
+    width: 100%;
+    display: block;
+}
+
+.promo-banner:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 63, 92, 0.18);
+}
+
 
 @media (min-width: 768px) {
   .impact-section .container {

@@ -66,7 +66,6 @@
   box-shadow: 0 10px 30px rgba(0, 63, 92, 0.1);
   border-top: 5px solid var(--color-sand);
   align-self: start;
-  position: sticky;
   top: 2rem;
 }
 
@@ -149,9 +148,61 @@
 
 
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
+    /* Faz o layout de 2 colunas aparecer mais cedo (em tablets) */
+    .species-content {
+        grid-template-columns: 280px 1fr;
+        gap: 2rem;
+    }
+}
+@media (min-width: 769px) {
+  
+  /* 1. Ativa o layout de duas colunas */
   .species-content {
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 320px 1fr; /* Coluna da ficha + coluna do texto */
     gap: 4rem;
+  }
+
+  /* 2. Faz a "Ficha Rápida" ficar fixa ao rolar a página */
+  .quick-facts {
+    position: sticky;
+  }
+}
+
+@media (max-width: 768px) {
+  .species-hero {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .species-hero-title {
+    padding-bottom: 2rem;
+  }
+
+  .species-hero-title h1 {
+    font-size: clamp(2.5rem, 10vw, 3rem);
+  }
+
+  .species-hero-title h2 {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .species-content {
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+  }
+
+  .quick-facts {
+      position: static;
+      top: auto;
+  }
+
+  .main-description h2 {
+    font-size: 2rem;
+  }
+
+  .main-description {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 }
